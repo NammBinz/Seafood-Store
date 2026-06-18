@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+    <footer th:fragment="footer" class="site-footer" id="lien-he">
+        <div class="container">
+
+            <div class="row g-4 justify-content-center text-center text-lg-start">
+
+                <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center align-items-lg-start">
+                    <div class="footer-brand justify-content-center">
+                        <img th:src="@{/images/logo.png}"
+                             alt="Logo Hải Sản"
+                             class="footer-logo">
+                        <span class="logo-text">Hải Sản <strong>Tươi Ngon</strong></span>
+                    </div>
+
+                    <p class="footer-desc mt-3">
+                        Cửa hàng hải sản tươi sống, chuyên cung cấp sản phẩm chất lượng,
+                        nguồn gốc rõ ràng và giá cả hợp lý.
+                    </p>
+
+                    <p> </p>
+
+                    <p>© 2026 Hải Sản Tươi Ngon</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center align-items-lg-start">
+                    <h5 class="footer-title">Thông tin liên hệ</h5>
+
+                    <ul class="footer-info">
+                        <li>
+                            <img th:src="@{/images/icons/place.png}" alt="Địa chỉ">
+                            <span>Đường Nghiêm Xuân Nghiêm, Phường Đại Kim, TP.Hà Nội</span>
+                        </li>
+
+                        <li>
+                            <img th:src="@{/images/icons/phone-call.png}" alt="Số điện thoại">
+                            <span>0912 123 123</span>
+                        </li>
+
+                        <li>
+                            <img th:src="@{/images/icons/email.png}" alt="Email">
+                            <span>seafoodstore@gmail.com</span>
+                        </li>
+
+                        <li>
+                            <img th:src="@{/images/icons/clock.png}" alt="Giờ mở cửa">
+                            <span>Mở cửa: 7:00 - 22:00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center align-items-lg-start">
+                    <h5 class="footer-title">Liên kết nhanh</h5>
+
+                    <ul class="footer-links">
+                        <li><a th:href="@{/}">Trang chủ</a></li>
+                        <li><a th:href="@{/shop}">Cửa hàng</a></li>
+                        <li><a th:href="@{/cart}">Giỏ hàng</a></li>
+                        <li><a th:href="@{/orders/my-orders}">Đơn hàng của tôi</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
